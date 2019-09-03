@@ -1,0 +1,33 @@
+{
+  "parser": "babel-eslint",
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["./src/app/App"]
+      }
+    }
+  },
+  "extends": ["airbnb", "prettier"],
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "plugins": ["react", "prettier"],
+
+  "rules": {
+    "react/forbid-prop-types": "off",
+    "react/destructuring-assignment": "off",
+    "no-unused-vars": "off",
+    "react/prefer-stateless-function": "off",
+    "no-plusplus": [
+      "error",
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
+    "react/jsx-filename-extension": [0, { "extensions": [".js", ".jsx"] }],
+    "no-console": "off",
+    "no-alert": "off",
+    "func-names": "off"
+  }
+}
